@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
   <head>
     <title>ngMadLibs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,32 +32,32 @@
                   <input type="text" class="form-control" id="name" placeholder="Name" ng-model="name">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="jobTitle" placeholder="Job Title">
+                  <input type="text" class="form-control" id="jobTitle" placeholder="Job Title" ng-model="jobTitle">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="tediusTask" placeholder="Tedius Task">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="dirtyTask" placeholder="Dirty Task">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="Celebrity" placeholder="Celebrity">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="uselessSkill" placeholder="Useless Skill">
+                  <input type="text" class="form-control" id="tediusTask" placeholder="Tedius Task" ng-model="tediusTask">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="adjective" placeholder="Adjective">
+                  <input type="text" class="form-control" id="dirtyTask" placeholder="Dirty Task" ng-model="dirtyTask">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="obnoxousCelebrity" placeholder="Obnoxious Celebrity">
+                  <input type="text" class="form-control" id="Celebrity" placeholder="Celebrity" ng-model="celebrity">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="hugeNumber" placeholder="Huge Number">
+                  <input type="text" class="form-control" id="uselessSkill" placeholder="Useless Skill" ng-model="uselessSkill">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="adjective" placeholder="Adjective" ng-model="adjective">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="obnoxousCelebrity" placeholder="Obnoxious Celebrity" ng-model="obnoxiousCelebrity">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="hugeNumber" placeholder="Huge Number" ng-model="hugeNumber">
                 </div>
               </div>
             </div>
@@ -65,8 +65,8 @@
 
           <hr>
 
-          <h4><p><span class="input">{{ name }}</span> was a BLANK who loved technology. Although she loved parts of her job, she absolutely hated BLANK and BLANK. So, BLANK met with her life mentor BLANK who told her to learn how to  BLANK with Galvanize. Galvanize didn't offer a course on  BLANK so she studied programming instead.</p>
-          <p>What a great decision! With her new skills, BLANK built a(n) BLANK robot named ebrity BLANK that not only loved BLANK but did it BLANK faster.</h4>
+          <h4><p><span class="input">{{ name }}</span> was a <span class="input">{{ jobTitle }}</span> who loved technology. Although she loved parts of her job, she absolutely hated <span class="input">{{ tediusTask }}</span> and <span class="input">{{ dirtyTask }}</span>. So, <span class="input">{{ name }}</span> met with her life mentor <span class="input">{{ celebrity }}</span> who told her to learn how to <span class="input">{{ uselessSkill }}</span> with Galvanize. Galvanize didn't offer a course on <span class="input">{{ uselessSkill }}</span> so she studied programming instead.</p>
+          <p>What a great decision! With her new skills, <span class="input">{{ name }}</span> built a(n) <span class="input">{{ adjective }}</span> robot named <span class="input">{{ obnoxiousCelebrity }}</span> that not only loved <span class="input">{{ name }}</span> but loved it <span class="input">{{ hugeNumber }}</span> faster.</h4>
 
         </div>
       </div>
