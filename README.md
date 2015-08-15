@@ -85,22 +85,26 @@ Before we start building, read over some of Angular's main features:
 Using your information retrieval skills, define the following directives from the [Angular site](https://angularjs.org/):
 
 1. `ng-app`:
+  Tells AngularJS to be active in this portion of the page ( if in initial html element, tells AngularJS to be active in the entire document)
 1. `ng-model`:
+  This links the form and the model.  Any changes to the control update the data in your model, and when you change the model it updates the control.
 
 What does the `ng` prefix mean?
+Indicates that you are working with angular and that it is a directive. Directives are used within your html doc to add additional functionality.
 
 Also, in your own words, define:
 
-1. Two-way binding:
-1. Templates:
+1. Two-way binding: Synchronizes data between the model and view
+1. Templates: Used for embedding JS/Angular logic in your HTML files
 
 Finally, what's with the double curly braces, `{{` `}}`, in the template?
+Used for add JS variables to the DOM
 
 ### Finished early?
 
 Define:
 
-1. `ng-repeat`:
-1. `ng-if`:
+1. `ng-repeat`: for loop
+1. `ng-if`: conditional
 
 Read through the following basic intro - [AngularJS Introduction](http://www.w3schools.com/angular/angular_intro.asp)
